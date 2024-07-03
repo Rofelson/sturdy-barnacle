@@ -2,8 +2,8 @@ def chebyshev_distance(p1, p2):
     """Docstring..."""
     cbdist = []
     for x, y in zip(p1, p2):
-        cbdist.append(abs(x - y))
-    return max(cbdist)
+        cbdist.append(x - y)
+    return max(abs(pdist) for pdist in cbdist)
 
 
 if __name__ == "__main__":
